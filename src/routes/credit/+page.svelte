@@ -1,5 +1,9 @@
 <div class="overflow-hidden flex items-center justify-center h-screen bg-back_cath">
     <div class="animate-upcredits max-w-[800px] text-center text-2xl space-y-[1.6rem]">
+        <div class="flex flex-row items-center justify-between">
+            <img class ="max-w-[300px] p-10" src="/src/images/info.png">
+            <img class ="max-w-[400px] p-10" src="/src/images/asso.png">
+        </div>
         <div>
             <h1 class="vt323-regular">NOTRE EQUIPE : </h1>
             <div class="flex flex-row p-5 items-center justify-center">
@@ -68,6 +72,10 @@
         <div class="flex flex-col p-5 items-center justify-center">
           <p class="vt323-regular">Nuit de l'info 2024</p>
           <p class="vt323-regular">05/12/2024 -&gt; 06/12/2024</p>
+          
+        <div class="flex flex-row items-center justify-center">
+            <img class ="max-w-[300px] p-10" src="/src/images/eispri.png">
+            <img class ="max-w-[300px] p-10" src="/src/images/pizza.jpg">
         </div>
     </div>
 </div>

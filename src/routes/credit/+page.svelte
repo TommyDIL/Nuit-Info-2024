@@ -45,5 +45,29 @@
                 </div>
             </div>
         </div>
+
+        <div>
+          <h1>Remerciements spéciaux :</h1>
+          <div class="flex flex-col p-5 items-center justify-center">
+              <p class="vt323-regular">Luca Policastro</p>
+              <img src="/src/images/luca.jpg" class="w-40 h-40 border-dashed border-red-500 border-2">
+          </div>
+          <div class="flex flex-row p-5 items-center justify-center">
+            <div class="m-5">
+                <p class="vt323-regular strong">L'équipe enseignante</p>
+            </div>
+            <div class="m-5">
+                <p class="vt323-regular strong">Eispri Stic</p>
+            </div>
+            <div class="m-5">
+                <p class="vt323-regular strong">Race for water</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col p-5 items-center justify-center">
+          <p class="vt323-regular">Nuit de l'info 2024</p>
+          <p class="vt323-regular">05/12/2024 -&gt; 06/12/2024</p>
+        </div>
     </div>
 </div>

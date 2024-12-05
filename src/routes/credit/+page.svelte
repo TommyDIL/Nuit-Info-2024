@@ -1,5 +1,9 @@
 <div class="overflow-hidden flex items-center justify-center h-screen bg-back_cath">
     <div class="animate-upcredits max-w-[800px] text-center text-2xl space-y-[1.6rem]">
+        <div class="flex flex-row items-center justify-between">
+            <img class ="max-w-[300px] p-10" src="/src/images/info.png">
+            <img class ="max-w-[400px] p-10" src="/src/images/asso.png">
+        </div>
         <div>
             <h1 class="vt323-regular">NOTRE EQUIPE : </h1>
             <div class="flex flex-row p-5 items-center justify-center">
@@ -44,6 +48,10 @@
                     <img src="/src/images/etienne.jpg" class="w-40 h-40 border-dashed border-red-500 border-2">
                 </div>
             </div>
+        </div>
+        <div class="flex flex-row items-center justify-center">
+            <img class ="max-w-[300px] p-10" src="/src/images/eispri.png">
+            <img class ="max-w-[300px] p-10" src="/src/images/pizza.jpg">
         </div>
     </div>
 </div>

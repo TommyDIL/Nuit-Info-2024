@@ -4,12 +4,40 @@
 	function handle_click() {
 		count += 1;
 	}
+	let connexion_database = false;
 	let array = [1, 2, 3, 4, 5];
+	async function test_connexion_base(){
+		let res = await fetch("/api/mongo", {
+		method: "GET",
+		headers: {
+			"Content-Type": "application/json",
+		}
+		});
+		if(res.status == 200){
+			connexion_database = true;
+		}else{
+			let res_json = await res.json();
+			console.log(res_json);
+			connexion_database = false;
+		}
+	}
 </script>
 
 <div class="flex-center">
 	<h1 class="text-4xl">Welcome to SvelteKit</h1>
 	<h2 class="my-4">On est sur une base pour la nuit de l'info</h2>
+
+	{#await test_connexion_base()}
+		<p>Connexion en cours</p>
+	{:then}
+		{#if connexion_database}
+			<p>Connexion réussi</p>
+		{:else}
+			<p>Connexion échoué</p>
+		{/if}
+	{:catch error}
+		<p>Erreur de connexion</p>		
+	{/await}
 
 	<p>
 		Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation

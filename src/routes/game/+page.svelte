@@ -44,7 +44,7 @@
         
         <div class=" absolute bottom-0">
 
-            <div class="absolute inset-0 my-20 mx-80">
+            <div class="absolute inset-0 ">
                 <div class="absolute bg-back_cath -z-10 inset-0 mx-20" >
                     
                 </div>
@@ -72,7 +72,7 @@
 
     </div>
     
-    <div class="bg-red-300 w-1/6">
+    <div class=" w-1/6">
         <img class="z-20 pointer-events-none" src="/src/images/postit.png" alt="AVENGERS">
     </div>
 </div>

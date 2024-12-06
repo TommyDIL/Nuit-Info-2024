@@ -75,7 +75,7 @@
 		console.log(clickedLogoId);
 		console.log(randomLogo.id);
 		if (clickedLogoId === randomLogo.id) {
-			window.location.href = '/game';
+			window.location.href = '/start';
 		}
 	}
 </script>

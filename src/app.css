@@ -28,7 +28,7 @@
     }
   
     .animate-upcredits {
-      animation: upcredits 7s linear forwards; /* Durée augmentée à 7s pour une transition plus lente */
+      animation: upcredits 20s linear forwards; /* Durée augmentée à 7s pour une transition plus lente */
     }
   }
   

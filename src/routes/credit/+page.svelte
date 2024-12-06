@@ -1,4 +1,80 @@
-<div class="overflow-hidden flex items-center justify-center h-screen bg-back_cath">
+<script>
+   const colors = [['bg-p11', 'text-p12', 'border-p13'],
+                  ['bg-p21', 'text-p22', 'border-p23'],
+                  ['bg-p31', 'text-p32', 'border-p33'],
+                  ['bg-p41', 'text-p42', 'border-p43'],
+                  ['bg-p51', 'text-p52', 'border-p53'],
+                  ['bg-back_cath', 'text-black', 'border-red-500']];
+
+function getRandomColor() {
+  return colors[Math.floor(Math.random() * colors.length)];
+}
+
+function changeColor() {
+  const nbColor = getRandomColor(); 
+
+  const backgrounds = document.querySelectorAll('.background-random');
+  backgrounds.forEach(function (background) {
+    // Supprime toute classe de la liste des couleurs présente dans la classList de l'élément
+    colors.forEach(color => {
+      if (background.classList.contains(color[0])) {
+        background.classList.remove(color[0]);
+      }
+    });
+    
+    // Ajoute une nouvelle couleur aléatoire
+    background.classList.add(nbColor[0]);
+  });
+
+  const h1 = document.querySelectorAll('h1');
+
+  h1.forEach(function (text) {
+    // Supprime toute classe de la liste des couleurs présente dans la classList de l'élément
+    colors.forEach(color => {
+      if (text.classList.contains(color[1])) {
+        text.classList.remove(color[1]);
+      }
+    });
+
+    // Ajoute une nouvelle couleur aléatoire
+    text.classList.add(nbColor[1]);
+  });
+
+
+  const p = document.querySelectorAll('p'); 
+
+  p.forEach(function (text) {
+    // Supprime toute classe de la liste des couleurs présente dans la classList de l'élément
+    colors.forEach(color => {
+      if (text.classList.contains(color[1])) {
+        text.classList.remove(color[1]);
+      }
+    });
+
+    // Ajoute une nouvelle couleur aléatoire
+    text.classList.add(nbColor[1]);
+  });
+
+  const borders = document.querySelectorAll('img'); 
+
+  borders.forEach(function (border) {
+    // Supprime toute classe de la liste des couleurs présente dans la classList de l'élément
+    colors.forEach(color => {
+      if (border.classList.contains(color[2])) {
+        border.classList.remove(color[2]);
+      }
+    });
+
+    // Ajoute une nouvelle couleur aléatoire
+    border.classList.add(nbColor[2]);
+  });
+}
+
+</script>
+
+<button on:click={changeColor}>Change color</button>
+
+<div class="background-random overflow-hidden flex items-center justify-center h-screen bg-back_cath">
     <div class="animate-upcredits max-w-[800px] text-center text-2xl space-y-[1.6rem]">
         <div class="flex flex-row items-center justify-between">
             <img class ="max-w-[300px] p-10" src="/src/images/info.png">
@@ -83,6 +159,5 @@
           <p class="vt323-regular text-6xl">Nuit de l'info 2024</p>
           <p class="vt323-regular text-5xl">05/12/2024 -&gt; 06/12/2024</p>
         </div>
-        
-    </div>
+      </div>
 </div>

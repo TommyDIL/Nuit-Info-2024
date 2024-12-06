@@ -287,7 +287,7 @@
     }
 
 
-    var qrCodesList = ["/src/images/teva.jpg", "/src/images/tommy.jpg", "/src/images/martin.jpg"];
+    var qrCodesList = ["/src/images/qr_image.png", "/src/images/qr_image1.png", "/src/images/qr_image2.png"];
 
 
     function postItClicked() {
@@ -295,7 +295,7 @@
         var body = document.body;
         body.appendChild(section_qr);
 
-        section_qr.id = "#postItQrCode";
+        section_qr.id = "postItQrCode";
 
         qrCodesList.forEach(qrCode => {
             let qrArticle = document.createElement("article");

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
-
+	import lol_path from '/src/images/lol.png';
 	import '$css/global.css';
 
 	let is_orientation_portrait = false;
@@ -18,7 +18,7 @@
 
 	// Définir un tableau pour les logos
 	const logos = [
-		{ id: '$lib/images/456.png', src: '/images/lol.png' },
+		{ id: '$lib/images/456.png', src: lol_path },
 		{ id: '$lib/images/741.png', src: '/images/discord.png' },
 		{ id: '$lib/images/789.png', src: '/images/VSC.png' },
 		{ id: '/public/images/123.png', src: '/public/images/dockerwhale.png' }

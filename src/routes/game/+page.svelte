@@ -23,7 +23,7 @@
     import phone from '/src/img/rotate_phone.png';
 
     import { initPopUp } from '$lib/popUp';
-    var mailBox : String = ""; 
+    var mailBox : string = ""; 
     import {verificationDefaite, verificationLED} from "./../../lib/popUp";
 	let is_orientation_portrait = false;
     if (browser) {
@@ -423,7 +423,7 @@
         </div>
         <div class="h-2/3">
             {#if mailBox != ""}
-                  <img class="z-100 grow" src="/src/images/letters/{mailBox}" alt="Lettre">
+                  <img class="z-100 grow" src="{mailBox}" alt="Lettre">
             {/if}
         </div>  
     </div>

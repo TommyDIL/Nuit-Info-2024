@@ -140,8 +140,8 @@
 
         // Définir les textes des options et l'énoncé du dilemme
         actual_dilem = "Comment voulez vous gerer vos employer.";
-        option1 = "Les payer plus\ncoût : 100";
-        option2 = "Embaucher plus\ncoût: 50 (+10 pecheurs)";
+        option1 = "Les payer plus,\ncoût : 100";
+        option2 = "Embaucher plus,\ncoût: 50 (+10 pecheurs)";
 
         // Sélectionner les boutons des options
         const o1 = document.querySelector(".option1");
@@ -157,7 +157,7 @@
                     close_popup();
                     fishPerFisherman = fishPerFisherman * 2;
                     setTimeout(() => {
-                        displayLetter("3_1.png");
+                        displayLetter("5_2.png");
                     }, 1000);
                 }
             });
@@ -169,7 +169,7 @@
                     close_popup();
                     nbFisherman += 10;
                     setTimeout(() => {
-                        displayLetter("3_2.png")
+                        displayLetter("5_1.png")
                     }, 1000);
                 }
             });
@@ -198,7 +198,7 @@
                 moneyPerFish = moneyPerFish * 0.8;
                 close_popup();
                 setTimeout(() => {
-                    displayLetter("4_1.png");
+                    displayLetter("6_1.png");
                 }, 1000);
             });
 
@@ -207,7 +207,7 @@
                 karma+=20;
                 close_popup();
                 setTimeout(() => {
-                    displayLetter("4_2.png")
+                    displayLetter("6_2.png")
                 }, 1000);
             });
         } else {
@@ -234,7 +234,7 @@
                 fishPerFisherman = fishPerFisherman + 2;
                 close_popup();
                 setTimeout(() => {
-                    displayLetter("5_1.png");
+                    displayLetter("3_1.png");
                 }, 1000);
             });
 
@@ -243,7 +243,7 @@
                 karma+=40;
                 close_popup();
                 setTimeout(() => {
-                    displayLetter("5_2.png")
+                    displayLetter("3_2.png")
                 }, 1000);
             });
         } else {

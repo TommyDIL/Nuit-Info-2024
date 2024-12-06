@@ -54,6 +54,37 @@
     }, 1000);
 
 
+    var qrCodesList = ["/src/images/teva.jpg", "/src/images/tommy.jpg", "/src/images/martin.jpg"];
+
+
+    function postItClicked() {
+        let section_qr = document.createElement("section");
+        var body = document.body;
+        body.appendChild(section_qr);
+
+        section_qr.id = "#postItQrCode";
+
+        qrCodesList.forEach(qrCode => {
+            let qrArticle = document.createElement("article");
+            section_qr.appendChild(qrArticle);
+
+            let qrBouton = document.createElement("button");
+            qrArticle.appendChild(qrBouton);
+
+            let qrImage = document.createElement("img");
+            qrImage.src = qrCode;
+
+            qrBouton.appendChild(qrImage);
+        });
+
+        let exitButton = document.createElement("button");
+        exitButton.id = "exitQR"
+        exitButton.innerHTML = "X"
+        exitButton.addEventListener("click", () => {
+            body.removeChild(section_qr);
+        });
+        section_qr.appendChild(exitButton);
+    }
 
 </script>
 
@@ -92,7 +123,9 @@
     </div>
     
     <div class=" w-1/6">
-        <img class="z-20 pointer-events-none" src="/src/images/postit.png" alt="AVENGERS">
+        <button on:click={postItClicked}>
+            <img class="z-20 pointer-events-none" src="/src/images/postit.png" alt="Post-it contenant les QR codes">
+        </button>
     </div>
 </div>
 <!-- 

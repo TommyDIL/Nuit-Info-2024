@@ -18,9 +18,9 @@
 
 	// Définir un tableau pour les logos
 	const logos = [
-		{ id: '/public/images/456.png', src: '/public/images/lol.png' },
-		{ id: '/public/images/741.png', src: '/public/images/discord.png' },
-		{ id: '/public/images/789.png', src: '/public/images/VSC.png' },
+		{ id: '$lib/images/456.png', src: '$lib/images/lol.png' },
+		{ id: '$lib/images/741.png', src: '$lib/images/discord.png' },
+		{ id: '$lib/images/789.png', src: '$lib/images/VSC.png' },
 		{ id: '/public/images/123.png', src: '/public/images/dockerwhale.png' }
 	];
 

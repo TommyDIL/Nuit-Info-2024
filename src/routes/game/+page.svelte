@@ -19,6 +19,8 @@
     import qr_image from '/src/images/qr_image.png';
     import qr_image1 from '/src/images/qr_image1.png';
     import qr_image2 from '/src/images/qr_image2.png';
+    import postit from '/src/images/postit.png';
+    import phone from '/src/img/rotate_phone.png';
 
     import { initPopUp } from '$lib/popUp';
     var mailBox : String = ""; 
@@ -366,7 +368,7 @@
 {#if is_orientation_portrait}
 	<div class="absolute flex h-screen w-screen flex-col items-center justify-center space-y-8">
 		<h1 class="text-center font-bold">Mettez votre téléphone à l'horizontal.</h1>
-		<img src="src/img/rotate_phone.png" alt="Icône tourner le téléphone." />
+		<img src="{phone}" alt="Icône tourner le téléphone." />
     </div>
 {:else}
 
@@ -415,7 +417,7 @@
     <div class=" w-1/5">
         <div class="h-1/3">
             <button on:click={postItClicked}>
-                <img class="z-20 pointer-events-none" src="/src/images/postit.png" alt="Post-it contenant les QR codes">
+                <img class="z-20 pointer-events-none" src="{postit}" alt="Post-it contenant les QR codes">
             </button>
         </div>
         <div class="h-2/3">

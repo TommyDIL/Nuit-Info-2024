@@ -1,4 +1,5 @@
 <script lang="ts">
+    import start_path from '/src/images/start.jpg';
     function toGame() {
         window.location.href = '/game';
     }
@@ -6,7 +7,7 @@
 
 <style>
     .full-screen {
-        background-image: url('./src/images/wallpaper/start.jpg');
+        background-image: url({start_path});
         background-size: cover;
         cursor: pointer;
         height: 100vh;

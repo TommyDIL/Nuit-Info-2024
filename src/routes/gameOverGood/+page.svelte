@@ -1,4 +1,5 @@
 <script lang="ts">
+    import path_bg from '/src/images/wallpaper/gameOverGood.jpg';
     function toGame() {
         window.location.href = '/credit';
     }
@@ -6,7 +7,7 @@
 
 <style>
     .full-screen {
-        background-image: url('./src/images/wallpaper/gameOverGood.jpg');
+        background-image: url({path_bg});
         background-size: cover;
         cursor: pointer;
         height: 100vh;

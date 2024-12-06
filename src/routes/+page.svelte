@@ -4,6 +4,11 @@
 	import discord_path from '/src/images/discord.png';
 	import vsc_path from '/src/images/VSC.png';
 	import dockerwhale_path from '/src/images/dockerwhale.png';
+	import path_id_lol from '/src/images/456.png';
+	import path_id_discord from '/src/images/741.png';
+	import path_id_vsc from '/src/images/789.png';
+	import path_id_dockerwhale from '/src/images/123.png';
+	import phone_path from '/src/images/phone.png';
 	import '$css/global.css';
 
 	let is_orientation_portrait = false;
@@ -21,10 +26,10 @@
 
 	// Définir un tableau pour les logos
 	const logos = [
-		{ id: '$lib/images/456.png', src: lol_path },
-		{ id: '$lib/images/741.png', src: discord_path },
-		{ id: '$lib/images/789.png', src: vsc_path },
-		{ id: '/public/images/123.png', src: dockerwhale_path }
+		{ id: path_id_lol, src: lol_path },
+		{ id: path_id_discord, src: discord_path },
+		{ id: path_id_vsc, src: vsc_path },
+		{ id: path_id_dockerwhale, src: dockerwhale_path }
 	];
 
 	let positions: {
@@ -101,7 +106,7 @@
 {#if is_orientation_portrait}
 	<div class="absolute flex h-screen w-screen flex-col items-center justify-center space-y-8">
 		<h1 class="text-center font-bold">Mettez votre téléphone à l'horizontal.</h1>
-		<img src="src/img/rotate_phone.png" alt="Icône tourner le téléphone." />
+		<img src="{phone_path}" alt="Icône tourner le téléphone." />
 	</div>
 {:else}
 

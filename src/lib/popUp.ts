@@ -55,12 +55,26 @@ export function initPopUp(){
 
 export function verificationDefaite(score:number){
     let defaite: boolean = false;
-    let text: string = "";
+    let texte: string = "";
     if (score >= 100){
-        text = "Blabla";
+        texte = "Loser";
     } 
     else if (score <= 0){
-        text = "Blublu";
+        texte = "Good_loser";
+    }
+    return [texte, defaite];
+}
+
+export function verificationLED(score:number){
+    let text: string = "";
+    if (score >= 60){
+        text = "Red";
+    } 
+    else if (score >= -20){
+        text = "Orange";
+    }
+    else {
+        text = "Green";
     }
     return text;
 }

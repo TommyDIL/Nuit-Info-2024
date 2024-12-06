@@ -1,6 +1,8 @@
 <script lang="ts">
+
     import '$css/game.css';
-    import {popUp} from '$lib/popUp';
+    import {verificationDefaite, verificationLED} from "./../../lib/popUp";
+
     var nbFish = 0;
 
     var money = 0;
@@ -10,6 +12,22 @@
     var fishPerFisherman = 1;
 
     var fishermanPrice = 30;
+
+    var score : number =0 ;
+    var texte_led = (score)
+
+    var currentImage = "/src/images/projet_g.png";
+
+    var img_led = verificationLED(score)
+    if (img_led == "Red"){
+        currentImage = "/src/images/projet_r.png"
+    }
+    else if (img_led == "Orange"){
+        currentImage = "/src/images/projet_y.png"
+    }
+    else {
+        currentImage = "/src/images/projet_g.png"
+    }
 
     function addFish() {
         nbFish += 1;
@@ -122,6 +140,37 @@
 	}
 	let array = [1, 2, 3, 4, 5];
 
+    var qrCodesList = ["/src/images/teva.jpg", "/src/images/tommy.jpg", "/src/images/martin.jpg"];
+
+
+    function postItClicked() {
+        let section_qr = document.createElement("section");
+        var body = document.body;
+        body.appendChild(section_qr);
+
+        section_qr.id = "#postItQrCode";
+
+        qrCodesList.forEach(qrCode => {
+            let qrArticle = document.createElement("article");
+            section_qr.appendChild(qrArticle);
+
+            let qrBouton = document.createElement("button");
+            qrArticle.appendChild(qrBouton);
+
+            let qrImage = document.createElement("img");
+            qrImage.src = qrCode;
+
+            qrBouton.appendChild(qrImage);
+        });
+
+        let exitButton = document.createElement("button");
+        exitButton.id = "exitQR"
+        exitButton.innerHTML = "X"
+        exitButton.addEventListener("click", () => {
+            body.removeChild(section_qr);
+        });
+        section_qr.appendChild(exitButton);
+    }
 
 	// Rappel : Offre, option1 puis :
 	//	- Nombre pécheur
@@ -183,14 +232,16 @@
                 </div>
             </div>
                 
-            <img class="z-20 pointer-events-none" src="/src/images/tv.png" alt="AVENGERSSS">
+            <img class="z-20 pointer-events-none" src={currentImage} alt="AVENGERSSS">
         </div>
 
 
     </div>
     
     <div class=" w-1/6">
-        <img class="z-20 pointer-events-none" src="/src/images/postit.png" alt="AVENGERS">
+        <button on:click={postItClicked}>
+            <img class="z-20 pointer-events-none" src="/src/images/postit.png" alt="Post-it contenant les QR codes">
+        </button>
     </div>
 </div>
 <!-- 

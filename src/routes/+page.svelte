@@ -8,7 +8,7 @@
 	import path_id_discord from '/src/images/741.png';
 	import path_id_vsc from '/src/images/789.png';
 	import path_id_dockerwhale from '/src/images/123.png';
-	import phone_path from '/src/images/phone.png';
+	import phone_path from '/src/images/rotate_phone.png';
 	import '$css/global.css';
 
 	let is_orientation_portrait = false;

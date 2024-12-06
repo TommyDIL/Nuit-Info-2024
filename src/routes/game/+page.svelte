@@ -43,21 +43,23 @@
         
         <div class=" absolute bottom-0">
 
-            <div class="bg-back_cath absolute -z-10 inset-0 mx-0 " id="text-container">
-                <div class=" bg-back_cath text-hack vt323-regular text-xl h-80">
+            <div class="bg-back_cath absolute -z-10 inset-0 mx-0 " >
+                
+            </div>
+
+            <div class=" absolute bg-back_cath text-hack vt323-regular text-xl h-72 ml-32 w-3/4 text-center mt-20" id="text-container">
                     
     
-                        <button on:click={addFish} class="z-40">Pêcher</button>
-                        
+                <button on:click={addFish} class="z-40">Pêcher</button>
+                
 
-                        <p>Nombre de poissons : {nbFish}</p>
+                <p>Nombre de poissons : {nbFish}</p>
 
-                        <p>Argent : {money}€</p>
+                <p>Argent : {money}€</p>
 
-                        <p>Prix du poisson : {Math.round(moneyPerFish * 100) / 100}€</p>
-                        <p>Nombre de pêcheurs : {nbFisherman}</p>
-                        <button on:click={buyFisherman}>Achat d'un pêcheur ({fishermanPrice}€)</button>
-                </div>
+                <p>Prix du poisson : {Math.round(moneyPerFish * 100) / 100}€</p>
+                <p>Nombre de pêcheurs : {nbFisherman}</p>
+                <button on:click={buyFisherman}>Achat d'un pêcheur ({fishermanPrice}€)</button>
             </div>
 
             <img class="z-20 pointer-events-none" src="/src/images/tv.png" alt="AVENGERSSS">

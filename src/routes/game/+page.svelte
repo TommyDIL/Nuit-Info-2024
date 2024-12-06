@@ -1,10 +1,16 @@
 <script lang="ts">
-
+	import { browser } from '$app/environment';
     import '$css/game.css';
     import { initPopUp } from '$lib/popUp';
     var mailBox : String = ""; 
     import {verificationDefaite, verificationLED} from "./../../lib/popUp";
-
+	let is_orientation_portrait = false;
+    if (browser) {
+		is_orientation_portrait = window.matchMedia('(orientation: portrait)').matches;
+        window.matchMedia('(orientation: portrait)').addEventListener('change', (e) => {
+			is_orientation_portrait = e.matches;
+		});
+	}
     var nbFish = 0;
 
     var money = 0;
@@ -339,6 +345,12 @@
 
 </script>
 
+{#if is_orientation_portrait}
+	<div class="absolute flex h-screen w-screen flex-col items-center justify-center space-y-8">
+		<h1 class="text-center font-bold">Mettez votre téléphone à l'horizontal.</h1>
+		<img src="src/img/rotate_phone.png" alt="Icône tourner le téléphone." />
+    </div>
+{:else}
 
 <div class="flex flex-row-reverse h-screen space-between justify-center overflow-hidden">
     <div class=" w-5/6 flex flex-col"> 
@@ -398,3 +410,4 @@
 <!-- 
 top-0 bottom-15 left-0 right-0 p-20 -->
 <!-- top-15 bottom-0 left-0 right-0 p-20 -->
+{/if}

@@ -72,7 +72,11 @@ function changeColor() {
 
 </script>
 
-<button on:click={changeColor}>Change color</button>
+<button on:click={changeColor} type="button" class="absolute m-3
+text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium 
+rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">
+  <img src="/src/images/changeColor.png" alt="Change Color" class="h-8 ">
+</button>
 
 <div class="background-random overflow-hidden flex items-center justify-center h-screen bg-back_cath">
     <div class="animate-upcredits max-w-[800px] text-center text-2xl space-y-[1.6rem]">

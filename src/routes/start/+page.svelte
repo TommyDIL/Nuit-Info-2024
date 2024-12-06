@@ -1,5 +1,5 @@
 <script lang="ts">
-    import start_path from '/src/images/start.jpg';
+    import start_path from '/src/images/wallpaper/start.jpg';
     function toGame() {
         window.location.href = '/game';
     }

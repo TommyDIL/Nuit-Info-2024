@@ -1,5 +1,4 @@
 <script lang="ts">
-    import start_path from '/src/images/wallpaper/start.jpg';
     function toGame() {
         window.location.href = '/game';
     }
@@ -7,7 +6,7 @@
 
 <style>
     .full-screen {
-        background-image: url({start_path});
+        background-image: url('https://wallup.net/wp-content/uploads/2018/10/04/62285-steampunk-mechanical-ship-fantasy-ocean-sea-flight-clouds.jpg');
         background-size: cover;
         cursor: pointer;
         height: 100vh;

@@ -1,5 +1,4 @@
 <script lang="ts">
-    import path_bg from '/src/images/wallpaper/gameOverGood.jpg';
     function toGame() {
         window.location.href = '/credit';
     }
@@ -7,7 +6,7 @@
 
 <style>
     .full-screen {
-        background-image: url({path_bg});
+        background-image: url("https://c4.wallpaperflare.com/wallpaper/982/93/307/sci-fi-steampunk-blimp-ocean-wallpaper-preview.jpg");
         background-size: cover;
         cursor: pointer;
         height: 100vh;

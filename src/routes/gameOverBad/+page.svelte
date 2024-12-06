@@ -1,5 +1,4 @@
 <script lang="ts">
-    import path_bg from '/src/images/wallpaper/gameOverBad.jpg';
     function toGame() {
         window.location.href = '/credit';
     }
@@ -7,7 +6,7 @@
 
 <style>
     .full-screen {
-        background-image: url({path_bg});
+        background-image: url("https://w0.peakpx.com/wallpaper/325/206/HD-wallpaper-steampunk-ocean-dolphins-abstract-ocean-art-fantasy.jpg");
         background-size: cover;
         cursor: pointer;
         height: 100vh;

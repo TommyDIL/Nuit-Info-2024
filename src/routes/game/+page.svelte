@@ -112,6 +112,7 @@
                 money-=10;
                 close_popup();
                 setTimeout(() => {
+                    console.log("path 1");
                     displayLetter(path_1_1)
                 }, 1000);
             });

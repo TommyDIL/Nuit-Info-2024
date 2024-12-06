@@ -46,7 +46,7 @@
         }
     }
 
-    var next_event = 30;
+    var next_event = 50;
     var indiceEvent = 0;
     var EventList = [event1, event2, event3, event4, event5];
     var actual_dilem = "";

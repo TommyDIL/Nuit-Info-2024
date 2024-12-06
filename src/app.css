@@ -7,3 +7,30 @@
     font-weight: 400;
     font-style: normal;
   }
+
+  @layer utilities {
+    @keyframes upcredits {
+      0% {
+        transform: translateY(85%);
+        opacity: 0.5;
+      }
+      25% {
+        opacity: 1;
+      }
+      80% {
+        transform: translateY(-55%);
+        opacity: 1; /* L'opacité commence à diminuer ici */
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(-55%);
+      }
+    }
+  
+    .animate-upcredits {
+      animation: upcredits 20s linear forwards; /* Durée augmentée à 7s pour une transition plus lente */
+    }
+  }
+  
+
+  

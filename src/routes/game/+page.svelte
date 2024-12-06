@@ -1,5 +1,8 @@
 <script lang="ts">
+
     import '$css/game.css';
+    import {verificationDefaite, verificationLED} from "./../../lib/popUp";
+
     var nbFish = 0;
 
     var money = 0;
@@ -9,6 +12,22 @@
     var fishPerFisherman = 30;
 
     var fishermanPrice = 30;
+
+    var score : number =0 ;
+    var texte_led = (score)
+
+    var currentImage = "/src/images/projet_g.png";
+
+    var img_led = verificationLED(score)
+    if (img_led == "Red"){
+        currentImage = "/src/images/projet_r.png"
+    }
+    else if (img_led == "Orange"){
+        currentImage = "/src/images/projet_y.png"
+    }
+    else {
+        currentImage = "/src/images/projet_g.png"
+    }
 
     function addFish() {
         nbFish += 1;
@@ -66,7 +85,7 @@
                 </div>
             </div>
                 
-            <img class="z-20 pointer-events-none" src="/src/images/tv.png" alt="AVENGERSSS">
+            <img class="z-20 pointer-events-none" src={currentImage} alt="AVENGERSSS">
         </div>
 
 

@@ -52,30 +52,37 @@
 
         <div>
           <h1>Remerciements spéciaux :</h1>
-          <div class="flex flex-col p-5 items-center justify-center">
-              <p class="vt323-regular">Luca Policastro</p>
-              <img src="/src/images/luca.jpg" class="w-40 h-40 border-dashed border-red-500 border-2">
+          <div class="flex flex-row p-5 items-center justify-center">
+            <div class="flex flex-col p-5 items-center justify-center">
+                <p class="vt323-regular">Luca Policastro</p>
+                <img src="/src/images/luca.jpg" class="w-40 h-40 border-dashed border-red-500 border-2">
+            </div>
+            <div class="flex flex-col p-5 items-center justify-center">
+                <p class="vt323-regular">Eispri Stic</p>
+                <img src="/src/images/eispri.png" class="w-40 h-40 border-dashed border-red-500 border-2">
+            </div>
+            <div class="flex flex-col p-5 items-center justify-center">
+                <p class="vt323-regular">Eispri Pizza</p>
+                <img src="/src/images/pizza.jpg" class="w-40 h-40 border-dashed border-red-500 border-2">
+            </div>
           </div>
           <div class="flex flex-row p-5 items-center justify-center">
             <div class="m-5">
-                <p class="vt323-regular strong">L'équipe enseignante</p>
+                <p class="vt323-regular strong text-4xl">L'équipe enseignante</p>
             </div>
             <div class="m-5">
-                <p class="vt323-regular strong">Eispri Stic</p>
-            </div>
-            <div class="m-5">
-                <p class="vt323-regular strong">Race for water</p>
+                <p class="vt323-regular strong text-4xl">Race for water</p>
             </div>
           </div>
         </div>
+        <div class="m-10">
 
-        <div class="flex flex-col p-5 items-center justify-center">
-          <p class="vt323-regular">Nuit de l'info 2024</p>
-          <p class="vt323-regular">05/12/2024 -&gt; 06/12/2024</p>
-          
-        <div class="flex flex-row items-center justify-center">
-            <img class ="max-w-[300px] p-10" src="/src/images/eispri.png">
-            <img class ="max-w-[300px] p-10" src="/src/images/pizza.jpg">
         </div>
+
+        <div class="flex flex-col p-5 items-center justify-center m-30">
+          <p class="vt323-regular text-6xl">Nuit de l'info 2024</p>
+          <p class="vt323-regular text-5xl">05/12/2024 -&gt; 06/12/2024</p>
+        </div>
+        
     </div>
 </div>

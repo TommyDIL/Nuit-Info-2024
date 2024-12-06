@@ -49,11 +49,8 @@
                     
                 </div>
                 
-<<<<<<< HEAD
-                <div class=" absolute text-hack vt323-regular text-xl inset-0 ml-60 mt-60 text-7xl ">
-=======
                 <div class=" absolute text-hack vt323-regular text-xl inset-0 " id="text-container">
->>>>>>> edf9bee (css!)
+
                     
                     
                     <button on:click={addFish} class="z-40">Pêcher</button>

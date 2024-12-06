@@ -1,9 +1,10 @@
+
 #text-container {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    justify-content: center; 
+    align-items: center; 
     text-align: center;
     flex-direction: column;
 }
@@ -31,3 +32,24 @@
     width: 40px;
 
   }
+  
+body{
+    background-color: rgb(34, 34, 34);
+}
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.grow{
+    transition: transform 0.5s;
+}
+
+@media screen and (min-width: 1000px) {
+    .grow:active {
+        transform: scale(1.2);
+        transition: transform 0.5s;
+        position: absolute;
+        top: 10%;
+        left: 30%;
+    }
+}

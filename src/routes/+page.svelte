@@ -1,6 +1,9 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
 	import lol_path from '/src/images/lol.png';
+	import discord_path from '/src/images/discord.png';
+	import vsc_path from '/src/images/VSC.png';
+	import dockerwhale_path from '/public/images/dockerwhale.png';
 	import '$css/global.css';
 
 	let is_orientation_portrait = false;
@@ -19,9 +22,9 @@
 	// Définir un tableau pour les logos
 	const logos = [
 		{ id: '$lib/images/456.png', src: lol_path },
-		{ id: '$lib/images/741.png', src: '/images/discord.png' },
-		{ id: '$lib/images/789.png', src: '/images/VSC.png' },
-		{ id: '/public/images/123.png', src: '/public/images/dockerwhale.png' }
+		{ id: '$lib/images/741.png', src: discord_path },
+		{ id: '$lib/images/789.png', src: vsc_path },
+		{ id: '/public/images/123.png', src: dockerwhale_path }
 	];
 
 	let positions: {

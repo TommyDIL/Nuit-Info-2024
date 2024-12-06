@@ -1,6 +1,19 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
     import '$css/game.css';
+    import path_1_1 from '/src/images/letters/1_1.png';
+    import path_1_2 from '/src/images/letters/1_2.png';
+    import path_2_1 from '/src/images/letters/2_1.png';
+    import path_2_2 from '/src/images/letters/2_2.png';
+    import path_3_1 from '/src/images/letters/3_1.png';
+    import path_3_2 from '/src/images/letters/3_2.png';
+    import path_4_1 from '/src/images/letters/4_1.png';
+    import path_4_2 from '/src/images/letters/4_2.png';
+    import path_5_1 from '/src/images/letters/5_1.png';
+    import path_5_2 from '/src/images/letters/5_2.png';
+    import path_6_1 from '/src/images/letters/6_1.png';
+    import path_6_2 from '/src/images/letters/6_2.png';
+
     import { initPopUp } from '$lib/popUp';
     var mailBox : String = ""; 
     import {verificationDefaite, verificationLED} from "./../../lib/popUp";
@@ -91,7 +104,7 @@
                 money-=10;
                 close_popup();
                 setTimeout(() => {
-                    displayLetter("1_1.png")
+                    displayLetter(path_1_1)
                 }, 1000);
             });
 
@@ -296,7 +309,6 @@
 	let array = [1, 2, 3, 4, 5];
 
     function displayLetter(name:string){
-        name = 'j'+name;
         mailBox = name;        
     }
 

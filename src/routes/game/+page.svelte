@@ -13,6 +13,12 @@
     import path_5_2 from '/src/images/letters/5_2.png';
     import path_6_1 from '/src/images/letters/6_1.png';
     import path_6_2 from '/src/images/letters/6_2.png';
+    import path_projet_g from '/src/images/projet_g.png';
+    import path_projet_r from '/src/images/projet_r.png';
+    import path_projet_y from '/src/images/projet_y.png';
+    import qr_image from '/src/images/qr_image.png';
+    import qr_image1 from '/src/images/qr_image1.png';
+    import qr_image2 from '/src/images/qr_image2.png';
 
     import { initPopUp } from '$lib/popUp';
     var mailBox : String = ""; 
@@ -39,17 +45,17 @@
 
     var sellBySecond = 5;
 
-    var currentImage = "/src/images/projet_g.png";
+    var currentImage = path_projet_g;
 
     var img_led = verificationLED(score)
     if (img_led == "Red"){
-        currentImage = "/src/images/projet_r.png"
+        currentImage = path_projet_r
     }
     else if (img_led == "Orange"){
-        currentImage = "/src/images/projet_y.png"
+        currentImage = path_projet_y
     }
     else {
-        currentImage = "/src/images/projet_g.png"
+        currentImage = path_projet_g
     }
 
     function addFish() {
@@ -113,7 +119,7 @@
                 money-=30;
                 close_popup();
                 setTimeout(() => {
-                    displayLetter("1_2.png")
+                    displayLetter(path_1_2)
                 }, 1000);
             });
         } else {
@@ -141,7 +147,7 @@
                 close_popup();
                 fishPerFisherman = fishPerFisherman * 10;
                 setTimeout(() => {
-                    displayLetter("2_1.png")
+                    displayLetter(path_2_1)
                     karma+=80
                 }, 30000);
             });
@@ -176,7 +182,7 @@
                     close_popup();
                     fishPerFisherman = fishPerFisherman * 2;
                     setTimeout(() => {
-                        displayLetter("5_2.png");
+                        displayLetter(path_5_2);
                     }, 1000);
                 }
             });
@@ -188,7 +194,7 @@
                     close_popup();
                     nbFisherman += 10;
                     setTimeout(() => {
-                        displayLetter("5_1.png")
+                        displayLetter(path_5_1)
                     }, 1000);
                 }
             });
@@ -217,7 +223,7 @@
                 moneyPerFish = moneyPerFish * 0.8;
                 close_popup();
                 setTimeout(() => {
-                    displayLetter("6_1.png");
+                    displayLetter(path_6_1);
                 }, 1000);
             });
 
@@ -226,7 +232,7 @@
                 karma+=20;
                 close_popup();
                 setTimeout(() => {
-                    displayLetter("6_2.png")
+                    displayLetter(path_6_2)
                 }, 1000);
             });
         } else {
@@ -253,7 +259,7 @@
                 fishPerFisherman = fishPerFisherman + 2;
                 close_popup();
                 setTimeout(() => {
-                    displayLetter("3_1.png");
+                    displayLetter(path_3_1);
                 }, 1000);
             });
 
@@ -262,7 +268,7 @@
                 karma+=40;
                 close_popup();
                 setTimeout(() => {
-                    displayLetter("3_2.png")
+                    displayLetter(path_3_2)
                 }, 1000);
             });
         } else {
@@ -313,7 +319,7 @@
     }
 
 
-    var qrCodesList = ["/src/images/qr_image.png", "/src/images/qr_image1.png", "/src/images/qr_image2.png"];
+    var qrCodesList = [qr_image, qr_image1, qr_image2];
 
 
     function postItClicked() {

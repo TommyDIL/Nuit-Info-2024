@@ -18,6 +18,8 @@
     var score : number =0 ;
     var texte_led = (score)
 
+    var sellBySecond = 5;
+
     var currentImage = "/src/images/projet_g.png";
 
     var img_led = verificationLED(score)
@@ -250,9 +252,9 @@
     }
 
     setInterval(() => {
-        if(nbFish>5){
-            money += 5 * moneyPerFish;
-            nbFish -= 5;
+        if(nbFish>sellBySecond){
+            money += sellBySecond * moneyPerFish;
+            nbFish -= sellBySecond;
         }else{
             money += nbFish * moneyPerFish;
             nbFish = 0;
@@ -271,6 +273,11 @@
         
         }
     }, 2000);
+
+    setInterval(() =>{
+        sellBySecond += 1;
+
+    }, 4000)
 
     setInterval(() => {
         nbFish += fishPerFisherman * nbFisherman;

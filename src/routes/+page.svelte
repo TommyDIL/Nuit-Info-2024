@@ -3,7 +3,7 @@
 	import lol_path from '/src/images/lol.png';
 	import discord_path from '/src/images/discord.png';
 	import vsc_path from '/src/images/VSC.png';
-	import dockerwhale_path from '/public/images/dockerwhale.png';
+	import dockerwhale_path from '/src/images/dockerwhale.png';
 	import '$css/global.css';
 
 	let is_orientation_portrait = false;

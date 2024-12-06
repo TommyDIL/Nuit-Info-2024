@@ -18,10 +18,10 @@
 
 	// Définir un tableau pour les logos
 	const logos = [
-		{ id: '/src/images/456.png', src: '/src/images/lol.png' },
-		{ id: '/src/images/741.png', src: '/src/images/discord.png' },
-		{ id: '/src/images/789.png', src: '/src/images/VSC.png' },
-		{ id: '/src/images/123.png', src: '/src/images/dockerwhale.png' }
+		{ id: '/public/images/456.png', src: '/public/images/lol.png' },
+		{ id: '/public/images/741.png', src: '/public/images/discord.png' },
+		{ id: '/public/images/789.png', src: '/public/images/VSC.png' },
+		{ id: '/public/images/123.png', src: '/public/images/dockerwhale.png' }
 	];
 
 	let positions: {

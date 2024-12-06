@@ -1,3 +1,75 @@
-<div class="bg-back_cath absolute top-0 bottom-0 left-0 right-0 p-20">
-    <p class="text-hack vt323-regular text-xl">This is a game</p>
+<script lang="ts">
+    var nbFish = 0;
+
+    var money = 0;
+    var moneyPerFish = 0.9;
+    
+    var nbFisherman = 0;
+    var fishPerFisherman = 30;
+
+    var fishermanPrice = 30;
+
+    function addFish() {
+        nbFish += 1;
+    }
+
+    function buyFisherman(){
+        if (money >= fishermanPrice){
+            nbFisherman += 1;
+            money -= fishermanPrice;
+
+            fishermanPrice *= 1.6;
+        }
+    }
+
+    setInterval(() => {
+        money += nbFish * moneyPerFish;
+        nbFish = 0;
+
+
+    }, 5000);
+
+    setInterval(() => {
+        nbFish += fishPerFisherman * nbFisherman;
+    }, 1000);
+
+
+
+</script>
+
+
+<div class="flex flex-row-reverse h-screen space-between justify-center ">
+    <div class=" w-5/6 flex flex-col"> 
+        
+        <div class=" absolute bottom-0">
+
+            <div class="bg-back_cath absolute -z-10 inset-0 mx-0 " id="text-container">
+                <div class=" bg-back_cath text-hack vt323-regular text-xl h-80">
+                    
+    
+                        <button on:click={addFish} class="z-40">Pêcher</button>
+                        
+
+                        <p>Nombre de poissons : {nbFish}</p>
+
+                        <p>Argent : {money}€</p>
+
+                        <p>Prix du poisson : {Math.round(moneyPerFish * 100) / 100}€</p>
+                        <p>Nombre de pêcheurs : {nbFisherman}</p>
+                        <button on:click={buyFisherman}>Achat d'un pêcheur ({fishermanPrice}€)</button>
+                </div>
+            </div>
+
+            <img class="z-20 pointer-events-none" src="/src/images/tv.png" alt="AVENGERSSS">
+        </div>
+
+
+    </div>
+    
+    <div class="bg-red-300 w-1/">
+        <p>dedede</p>
+    </div>
 </div>
+<!-- 
+top-0 bottom-15 left-0 right-0 p-20 -->
+<!-- top-15 bottom-0 left-0 right-0 p-20 -->

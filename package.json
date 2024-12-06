@@ -37,6 +37,7 @@
 		"vitest": "^2.0.4"
 	},
 	"dependencies": {
-		"svelte-viewport-info": "^1.0.3"
+		"svelte-viewport-info": "^1.0.3",
+		"mongodb": "^6.11.0"
 	}
 }

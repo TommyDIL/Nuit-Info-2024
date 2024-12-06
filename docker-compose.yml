@@ -1,0 +1,30 @@
+version: "3"
+services:
+  mongo:
+    container_name: mongo
+    image: mongo
+    volumes:
+      - mongo-data:/data/db
+    environment:
+      MONGO_INITDB_DATABASE: db
+    ports:
+      - 27017:27017
+
+
+
+  front-end:
+    container_name: sveltekit
+    image: sveltekit
+    restart: always
+    build:
+      context: .
+    ports:
+      - 80:3000
+    depends_on:
+      - mongo
+    links:
+      - mongo
+
+
+volumes:
+  mongo-data:

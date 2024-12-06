@@ -91,6 +91,7 @@
 			window.location.href = '/start';
 		}
 	}
+
 </script>
 
 

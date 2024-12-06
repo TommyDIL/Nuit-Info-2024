@@ -22,5 +22,4 @@ EXPOSE 3000
 
 #USER node:node
 
-CMD ["npm", "run", "build", "--host", "0.0.0.0"]
 CMD ["node", "build"]

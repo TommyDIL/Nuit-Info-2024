@@ -118,6 +118,7 @@
             // Ajouter des listeners pour les options
             o1.addEventListener("click", () => {
                 close_popup();
+                fishPerFisherman = fishPerFisherman * 10;
                 setTimeout(() => {
                     displayLetter("2_1.png")
                     karma+=80

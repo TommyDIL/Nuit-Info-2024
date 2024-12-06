@@ -1,4 +1,6 @@
 <script lang='ts'>
+  	import { browser } from '$app/environment';
+
    const colors = [['bg-p11', 'text-p12', 'border-p13'],
                   ['bg-p21', 'text-p22', 'border-p23'],
                   ['bg-p31', 'text-p32', 'border-p33'],
@@ -35,7 +37,9 @@ function changeAllColor() {
 }
 
 setTimeout(() => {
-  window.location.href = '/start';
+  if (browser) {
+    window.location.href = '/start';
+  }
 }, 21000);
 
 </script>

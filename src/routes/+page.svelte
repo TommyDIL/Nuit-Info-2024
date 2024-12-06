@@ -25,8 +25,8 @@
 		positions = logos.map(() => ({
 			x: Math.random() * (window.innerWidth - 100), // Position initiale aléatoire
 			y: Math.random() * (window.innerHeight - 100),
-			speedX: Math.random() * 10 + 2, // Vitesse aléatoire
-			speedY: Math.random() * 10 + 2
+			speedX:  2, // Vitesse aléatoire
+			speedY:  2
 		}));
 
 		let animationFrame: number;

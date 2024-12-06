@@ -372,7 +372,7 @@
                     
                     <p>Prix du poisson : {Math.round(moneyPerFish * 100) / 100}€</p>
                     <p>Nombre de pêcheurs : {Math.round(nbFisherman * 100) / 100}</p>
-                    <button on:click={buyFisherman}>Achat d'un pêcheur ({Math.round(fishermanPrice * 100) / 100}€)</button>
+                    <button class="border-hack option2 border-solid border-2 p-1 m-1 cursor-pointer hover:bg-green-900" on:click={buyFisherman}>Achat d'un pêcheur ({Math.round(fishermanPrice * 100) / 100}€)</button>
                 </div>
             </div>
                 

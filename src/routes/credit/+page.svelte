@@ -33,7 +33,11 @@ function changeAllColor() {
   changeColor('p', 1, randomColor);
   changeColor('img', 2, randomColor);
 }
-  
+
+setTimeout(() => {
+  window.location.href = '/start';
+}, 21000);
+
 </script>
 
 <button on:click={changeAllColor} type="button" class="absolute m-3

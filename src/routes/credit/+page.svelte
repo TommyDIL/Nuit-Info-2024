@@ -1,4 +1,4 @@
-<script>
+<script lang='ts'>
    const colors = [['bg-p11', 'text-p12', 'border-p13'],
                   ['bg-p21', 'text-p22', 'border-p23'],
                   ['bg-p31', 'text-p32', 'border-p33'],
@@ -10,69 +10,33 @@ function getRandomColor() {
   return colors[Math.floor(Math.random() * colors.length)];
 }
 
-function changeColor() {
-  const nbColor = getRandomColor(); 
-
-  const backgrounds = document.querySelectorAll('.background-random');
-  backgrounds.forEach(function (background) {
+function changeColor(name: string, index: number, randomColor: string[]) {
+  const elements = document.querySelectorAll(name);
+  elements.forEach(function (element) {
     // Supprime toute classe de la liste des couleurs présente dans la classList de l'élément
     colors.forEach(color => {
-      if (background.classList.contains(color[0])) {
-        background.classList.remove(color[0]);
+      if (element.classList.contains(color[index])) {
+        element.classList.remove(color[index]);
       }
     });
     
     // Ajoute une nouvelle couleur aléatoire
-    background.classList.add(nbColor[0]);
-  });
-
-  const h1 = document.querySelectorAll('h1');
-
-  h1.forEach(function (text) {
-    // Supprime toute classe de la liste des couleurs présente dans la classList de l'élément
-    colors.forEach(color => {
-      if (text.classList.contains(color[1])) {
-        text.classList.remove(color[1]);
-      }
-    });
-
-    // Ajoute une nouvelle couleur aléatoire
-    text.classList.add(nbColor[1]);
-  });
-
-
-  const p = document.querySelectorAll('p'); 
-
-  p.forEach(function (text) {
-    // Supprime toute classe de la liste des couleurs présente dans la classList de l'élément
-    colors.forEach(color => {
-      if (text.classList.contains(color[1])) {
-        text.classList.remove(color[1]);
-      }
-    });
-
-    // Ajoute une nouvelle couleur aléatoire
-    text.classList.add(nbColor[1]);
-  });
-
-  const borders = document.querySelectorAll('img'); 
-
-  borders.forEach(function (border) {
-    // Supprime toute classe de la liste des couleurs présente dans la classList de l'élément
-    colors.forEach(color => {
-      if (border.classList.contains(color[2])) {
-        border.classList.remove(color[2]);
-      }
-    });
-
-    // Ajoute une nouvelle couleur aléatoire
-    border.classList.add(nbColor[2]);
+    element.classList.add(randomColor[index]);
   });
 }
 
+function changeAllColor() {
+  const randomColor = getRandomColor(); 
+
+  changeColor('.background-random', 0, randomColor);
+  changeColor('h1', 1, randomColor);
+  changeColor('p', 1, randomColor);
+  changeColor('img', 2, randomColor);
+}
+  
 </script>
 
-<button on:click={changeColor} type="button" class="absolute m-3
+<button on:click={changeAllColor} type="button" class="absolute m-3
 text-white focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium 
 rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-400 dark:hover:bg-gray-500">
   <img src="/src/images/changeColor.png" alt="Change Color" class="h-8 ">
@@ -102,7 +66,7 @@ rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-400 dark:hover:bg-gray-500
             </div>
             <div class="flex flex-row p-5 items-center justify-center">
                 <div class="m-5">
-                    <p class="vt323-regular">Hugo FERUCCI</p>
+                    <p class="vt323-regular">Hugo FERRUCCI</p>
                     <img src="/src/images/hugo.jpg" class="w-40 h-40 border-dashed border-red-500 border-2">
                 </div>
                 <div class="m-5">

@@ -108,11 +108,11 @@
                     
                     <p>Nombre de poissons : {nbFish}</p>
                     
-                    <p>Argent : {money}€</p>
+                    <p>Argent : {Math.round(money * 100) / 100}€</p>
                     
                     <p>Prix du poisson : {Math.round(moneyPerFish * 100) / 100}€</p>
-                    <p>Nombre de pêcheurs : {nbFisherman}</p>
-                    <button on:click={buyFisherman}>Achat d'un pêcheur ({fishermanPrice}€)</button>
+                    <p>Nombre de pêcheurs : {Math.round(nbFisherman * 100) / 100}</p>
+                    <button on:click={buyFisherman}>Achat d'un pêcheur ({Math.round(fishermanPrice * 100) / 100}€)</button>
                 </div>
             </div>
                 
@@ -123,9 +123,9 @@
     </div>
     
     <div class=" w-1/6">
-        <button on:click={postItClicked}>
-            <img class="z-20 pointer-events-none" src="/src/images/postit.png" alt="Post-it contenant les QR codes">
-        </button>
+            <button on:click={postItClicked}>
+                <img class="z-20 pointer-events-none" src="/src/images/postit.png" alt="Post-it contenant les QR codes">
+            </button>
     </div>
 </div>
 <!-- 

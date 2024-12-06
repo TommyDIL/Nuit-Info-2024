@@ -43,12 +43,12 @@
         
         <div class=" absolute bottom-0">
 
-            <div class="absolute inset-0 my-20 mx-40">
+            <div class="absolute inset-0 my-20 mx-80">
                 <div class="absolute bg-back_cath -z-10 inset-0 mx-20" >
                     
                 </div>
                 
-                <div class=" absolute text-hack vt323-regular text-xl inset-0 ml-60 mt-20" id="text-container">
+                <div class=" absolute text-hack vt323-regular text-xl inset-0 ml-60 mt-60 text-7xl ">
                     
                     
                     <button on:click={addFish} class="z-40">Pêcher</button>
@@ -71,7 +71,7 @@
     </div>
     
     <div class="bg-red-300 w-1/6">
-        <p>dedede</p>
+        <img class="z-20 pointer-events-none" src="/src/images/postit.png" alt="AVENGERS">
     </div>
 </div>
 <!-- 

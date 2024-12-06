@@ -5,10 +5,10 @@
 
 	// Définir un tableau pour les logos
 	const logos = [
-		{ id: 'lol', src: '/src/images/lol.png' },
-		{ id: 'discord', src: '/src/images/discord.png' },
-		{ id: 'VSC', src: '/src/images/VSC.png' },
-		{ id: 'dockerwhale', src: '/src/images/dockerwhale.png' }
+		{ id: '/src/images/456.png', src: '/src/images/lol.png' },
+		{ id: '/src/images/741.png', src: '/src/images/discord.png' },
+		{ id: '/src/images/789.png', src: '/src/images/VSC.png' },
+		{ id: '/src/images/123.png', src: '/src/images/dockerwhale.png' }
 	];
 
 	let positions: {
@@ -81,7 +81,7 @@
 </script>
 
 <div class="txt place-content-center rounded-md border-2">
-	<p>prouve que tu n'es pas un robot, clique sur {randomLogo.id}</p>
+	<p>prouve que tu n'es pas un robot, clique sur <img class="h-5 inline" src="{randomLogo.id}"></p>
 </div>
 
 <!-- Affichage des logos -->

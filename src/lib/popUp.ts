@@ -57,10 +57,10 @@ export function verificationDefaite(score:number){
     let defaite: boolean = false;
     let texte: string = "";
     if (score >= 100){
-        texte = "Blabla";
+        texte = "Loser";
     } 
     else if (score <= 0){
-        texte = "Blublu";
+        texte = "Good_loser";
     }
     return [texte, defaite];
 }

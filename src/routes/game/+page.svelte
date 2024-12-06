@@ -340,7 +340,7 @@
 </script>
 
 
-<div class="flex flex-row-reverse h-screen space-between justify-center ">
+<div class="flex flex-row-reverse h-screen space-between justify-center overflow-hidden">
     <div class=" w-5/6 flex flex-col"> 
         
         <div class=" absolute bottom-0">
@@ -382,16 +382,15 @@
 
     </div>
     
-    <div class=" w-1/6">
-        <div class="h-1/2">
+    <div class=" w-1/5">
+        <div class="h-1/3">
             <button on:click={postItClicked}>
                 <img class="z-20 pointer-events-none" src="/src/images/postit.png" alt="Post-it contenant les QR codes">
             </button>
         </div>
-        <div class="h-1/2">
+        <div class="h-2/3">
             {#if mailBox != ""}
-                
-                <img class="z-20 pointer-events-none" src="/src/images/letters/{mailBox}" alt="Lettre">
+                  <img class="z-100 grow" src="/src/images/letters/{mailBox}" alt="Lettre">
             {/if}
         </div>  
     </div>

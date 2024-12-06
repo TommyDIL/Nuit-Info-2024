@@ -368,11 +368,11 @@
                     
                     <p>Nombre de poissons : {nbFish}</p>
                     
-                    <p>Argent : {money.toFixed(1)}€</p>
+                    <p>Argent : {Math.round(money * 100) / 100}€</p>
                     
-                    <p>Prix du poisson : {((moneyPerFish * 100) / 100).toFixed(1)}€</p>
-                    <p>Nombre de pêcheurs : {nbFisherman}</p>
-                    <button on:click={buyFisherman} class="border-hack option2 border-solid border-2 p-1 m-1 cursor-pointer hover:bg-green-900">Achat d'un pêcheur ({fishermanPrice.toFixed(1)}€)</button>
+                    <p>Prix du poisson : {Math.round(moneyPerFish * 100) / 100}€</p>
+                    <p>Nombre de pêcheurs : {Math.round(nbFisherman * 100) / 100}</p>
+                    <button on:click={buyFisherman}>Achat d'un pêcheur ({Math.round(fishermanPrice * 100) / 100}€)</button>
                 </div>
             </div>
                 

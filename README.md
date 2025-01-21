@@ -1,38 +1,23 @@
-# sv
+# Nuit-Info-2024
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Ce projet à été réalisé par 7 étudiants de l'USMB de la L1 au M2 l'occasion de la nuit de l'info édition 2024. Il s'agit d'un jeu web svelte sur le thème des océans.
 
-## Creating a project
+## Le jeu
 
-If you're seeing this, you've probably already done this step. Congrats!
+![]()
 
-```bash
-# create a new project in the current directory
-npx sv create
+TODO with image
 
-# create a new project in my-app
-npx sv create my-app
-```
+### Installation du jeu
 
-## Developing
+Il suffit de cloner le projet puis d'ouvrir le projet en local.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Pour ce faire, exécutez dans un terminal :
+- npm install
+- npm run dev
 
-```bash
-npm run dev
+Vous obtiendrez alore une adresse locale. Ouvrez la sur un navigateur et le tour est joué.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## Crédits
+- [PHILIPPE Teva](https://github.com/TevaPhilippe05)
+- [](https://github.com/)

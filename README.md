@@ -1,6 +1,6 @@
 # Nuit-Info-2024
 
-Ce projet à été réalisé par 7 étudiants de l'USMB de la L1 au M2 l'occasion de la nuit de l'info édition 2024. Il s'agit d'un jeu web svelte sur le thème des océans.
+Ce projet à été réalisé par 8 étudiants de l'USMB de la L1 au M2 l'occasion de la nuit de l'info édition 2024. Il s'agit d'un jeu web svelte sur le thème des océans.
 
 ## Le jeu
 
@@ -20,4 +20,10 @@ Vous obtiendrez alore une adresse locale. Ouvrez la sur un navigateur et le tour
 
 ## Crédits
 - [PHILIPPE Teva](https://github.com/TevaPhilippe05)
-- [](https://github.com/)
+- [ARNOUX Martin](https://github.com/MartinArnoux)
+- [MOIROUD Elliott](https://github.com/moiroudelliott)
+- [FAUCON Chloé](https://github.com/bulbiii)
+- [TROGNON Julie](https://github.com/jtrognon)
+- [DI LUNA Tommy](https://github.com/TommyDIL)
+- [Hugo](https://github.com/skynat74)
+- [MALABRE Etienne](https://github.com/lasnelus)

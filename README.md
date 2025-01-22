@@ -25,5 +25,5 @@ Vous obtiendrez alore une adresse locale. Ouvrez la sur un navigateur et le tour
 - [FAUCON Chloé](https://github.com/bulbiii)
 - [TROGNON Julie](https://github.com/jtrognon)
 - [DI LUNA Tommy](https://github.com/TommyDIL)
-- [Hugo](https://github.com/skynat74)
+- [FERRUCCI Hugo](https://github.com/ModeusOperandis)
 - [MALABRE Etienne](https://github.com/lasnelus)
